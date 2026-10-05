@@ -1,0 +1,6 @@
+import { MapPin, Clock, ArrowUpRight } from 'lucide-react';
+import type { Stop } from '../types/itinerary';
+import { museums } from '../data/museums';
+import { MuseumSection } from './MuseumSection';
+import type { FavoritesProps } from './MuseumHighlights';
+export function TimelineItem({stop,index,favorites,onToggle}:{stop:Stop;index:number}&FavoritesProps) { const museum=museums.find(m=>m.id===stop.museumId); const mapUrl=`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(stop.location)}`; return <article className="timeline-item"><div className="timeline-time"><span>{stop.time}</span></div><div className="timeline-dot">{String(index+1).padStart(2,'0')}</div><div className="stop-card"><div className="stop-meta"><span className="eyebrow">{museum?'Museum stop':index===0?'Starting point':index===4?'Time for lunch':'Around Intramuros'}</span><span><Clock size={13}/>{stop.duration}</span></div><h3>{stop.title}</h3><p>{stop.description}</p><a className="map-link" href={mapUrl} target="_blank" rel="noreferrer"><MapPin size={14}/>Open location<ArrowUpRight size={13}/></a>{museum&&<MuseumSection museum={museum} favorites={favorites} onToggle={onToggle}/>}</div></article>; }

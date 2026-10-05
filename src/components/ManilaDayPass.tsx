@@ -1,0 +1,3 @@
+import { Heart, Ticket } from 'lucide-react';
+import { tripDetails } from '../data/tripDetails';
+export function ManilaDayPass() { return <section className="pass-section" aria-label="Manila day pass"><div className="pass"><div className="pass-main"><span className="eyebrow"><Ticket size={16}/> Manila Day Pass</span><h2>One city.<br/><em>Two hearts.</em></h2><p>National Museum + Intramuros</p><span className="pass-date">OCTOBER 17, 2026 · SATURDAY</span></div><div className="pass-stub"><Heart size={26} strokeWidth={1}/><h3>Admit Two 💗</h3><p>Starting Point</p><strong>{tripDetails.start}</strong><small>Suggested meetup · {tripDetails.meetTime}</small><span className="barcode" aria-hidden="true"/><small>A KEEPSAKE, NOT AN ADMISSION TICKET</small></div></div></section>; }

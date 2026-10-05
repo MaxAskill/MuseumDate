@@ -1,0 +1,14 @@
+import type { Stop } from '../types/itinerary';
+export const itinerary: Stop[] = [
+{id:'meet',time:'9:00 AM',title:'Meet at Exchange Regency',description:'I’ll meet you at your condo at Exchange Regency in Ortigas. Our little adventure starts together.',location:'The Exchange Regency, Exchange Road, Ortigas Center, Pasig',duration:'15 minutes'},
+{id:'transit',time:'9:15 AM',title:'Ride to MRT Ortigas / Shaw Boulevard',description:'Take a ride to either MRT station, go southbound to Taft Avenue, transfer to LRT-1 EDSA northbound, and get off at United Nations. Walk to Natural History.',location:'Ortigas MRT Station, Metro Manila',duration:'Allow about 1 hour 30 minutes, including transfers'},
+{id:'natural',time:'10:45 AM',title:'National Museum of Natural History',description:'A beautiful beginning: a soaring atrium, extraordinary wildlife, and our first photo together.',museumId:'natural',location:'National Museum of Natural History, Manila',duration:'1 hour'},
+{id:'anthropology',time:'12:00 PM',title:'National Museum of Anthropology',description:'Stories woven into cloth, objects, and the many cultures that make up the Philippines.',museumId:'anthropology',location:'National Museum of Anthropology, Manila',duration:'45 minutes'},
+{id:'arts',time:'1:00 PM',title:'National Museum of Fine Arts',description:'The big art moment of the day. Let’s find a painting we could talk about for hours.',museumId:'arts',location:'National Museum of Fine Arts, Manila',duration:'1 hour'},
+{id:'lunch',time:'2:15 PM',title:'Lunch, then the walled city',description:'A little pause for good food. Allow travel time to Intramuros before settling in for lunch.',location:'Intramuros, Manila',duration:'1 hour'},
+{id:'church',time:'3:15 PM',title:'San Agustin Church',description:'Slow down beneath centuries of history. Church access may depend on services; the museum is a separate visit.',location:'San Agustin Church, Intramuros',duration:'30 minutes'},
+{id:'casa',time:'3:45 PM',title:'Casa Manila / Plaza San Luis',description:'Courtyards, heritage details, and a quiet wander through old Manila. Visit the museum if admission is available.',location:'Casa Manila, Intramuros',duration:'30 minutes'},
+{id:'fort',time:'4:30 PM',title:'Fort Santiago',description:'Explore the historic grounds and riverside views. Leave a little space for a spontaneous photo stop.',location:'Fort Santiago, Intramuros',duration:'1 hour'},
+{id:'golden',time:'5:30 PM',title:'A golden-hour wander',description:'Follow the warm light through Intramuros. No checklist now—just a walk and a few more memories.',location:'Intramuros, Manila',duration:'30 minutes'},
+{id:'dinner',time:'6:00 PM',title:'Dinner & something sweet',description:'One last table for two. Let’s end the day with dessert and our favorite moments.',location:'Plaza San Luis, Intramuros',duration:'As long as we like'}
+];

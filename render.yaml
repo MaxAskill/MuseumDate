@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: museum-date
+    runtime: static
+    buildCommand: npm ci --include=dev && npm run build
+    staticPublishPath: ./dist
+    envVars:
+      - key: NODE_VERSION
+        value: "22"

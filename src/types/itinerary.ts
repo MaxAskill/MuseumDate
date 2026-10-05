@@ -1,0 +1,4 @@
+export type Highlight = { id: string; title: string; description: string; category: string; badge?: string; image?: string; imageAlt?: string; imageCaption?: string; imageCredit?: string; imageSource?: string; imageLicense?: string; imageLicenseUrl?: string };
+export type Museum = { id: string; name: string; subtitle: string; theme: 'sage' | 'beige' | 'rose'; duration: string; mainHighlight: Highlight; highlights: Highlight[]; photoSpot: string; photoSuggestion: string; mission: string; fact: string; source: string };
+export type Stop = { id: string; time: string; title: string; description: string; museumId?: string; location: string; duration: string };
+export type Restaurant = { id: string; name: string; description: string; category: string; url?: string; note?: string; budgetLabel?: string; budgetNote?: string; mealIdeas?: string[]; priceSource?: string; priceSourceLabel?: string; lunchEligible?: boolean };
